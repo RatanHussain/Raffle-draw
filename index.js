@@ -1,0 +1,1 @@
+const participentName = document.querySelector('#participentName')
