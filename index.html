@@ -1,45 +1,76 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Raffle Draw</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Raffle Draw</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center mt-5">A Complete Raffle Draw Apps</h1>
+			<div class="row mt-5">
+				<div class="col-6 position-relative">
+					<h4>Enter participend's here.</h4>
+					<textarea
+						class="p-2"
+						name=""
+						id="participentName"
+						cols="30"
+						rows="10"></textarea>
 
-    <div class="container">
-        <h1 class="text-center mt-5">A Complete Raffle Draw Apps</h1>
-        <div class="row mt-5">
-            <div class="col-6 position-relative">
-                <h4>Enter participend's here.</h4>
-                <textarea class="p-2" name="" id="participentName" cols="30" rows="10"></textarea>
-                <button  class="btn btn-outline-success d-block ms-5 mt-4">Show all names</button>
+					<button
+						href="#participentNameShow"
+						class="btn btn-outline-success d-block ms-5 mt-4"
+						data-bs-toggle="collapse">
+						Show all names
+					</button>
 
-                <ul class="list-group list-syle-none mt-5 text-center">
-                    <li class="list-group-item">demo 1</li>
-                    <li class="list-group-item">demo 2</li>
-                    <li class="list-group-item">demo 3</li>
-                </ul>
-            </div>
-            <div class="col-6">
-                <div class="right">
-                    <h4 class="text-center">Shuffling</h4>
-                    <input class="text-center py-3 ms-3 fs-5" type="text" name="" id="shuffle">
-                    <br><br>
-                    <h4 class="text-center">Winer's</h4>
-                    <ol class="list-group">
-                        <li class="list-group-item"><span class="btn btn-sm">First  :</span> <span id="first"></span></li>
-                        <li class="list-group-item"><span class="btn btn-sm">Second  :</span> <span id="second"></span></li>
-                        <li class="list-group-item"><span class="btn btn-sm">Thirds  :</span> <span id="third"></span></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
+					<ul
+						id="participentNameShow"
+						class="list-group list-syle-none mt-5 text-center collapse">
+					</ul>
+				</div>
+				<div class="col-6">
+					<div class="right">
+						<h4 class="text-center">Shuffling</h4>
+						<input
+							class="text-center py-3 ms-3 fs-5"
+							type="text"
+							name=""
+							id="shuffle" />
+						<br /><br />
+						<h4 class="text-center">Winer's</h4>
+						<ol class="list-group">
+							<li class="list-group-item">
+								<span class="btn btn-sm">First :</span>
+								<span id="first"></span>
+							</li>
+							<li class="list-group-item">
+								<span class="btn btn-sm">Second :</span>
+								<span id="second"></span>
+							</li>
+							<li class="list-group-item">
+								<span class="btn btn-sm">Thirds :</span>
+								<span id="third"></span>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+		<script src="index.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
